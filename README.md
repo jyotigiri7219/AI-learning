@@ -147,9 +147,11 @@ Beginner → Intermediate → Advanced
       👨‍💻 Creator & Maintainer
     </td>
     <td align="center">
+       <a href="https://github.com/mauryasuryakant">
       <img src="https://avatars.githubusercontent.com/u/225804267?v=4" width="80px;" alt=""/>
       <br />
       <sub><b>Ayush</b></sub>
+          </a>
       <br />
       👨‍💻 Collaborator
     </td>
