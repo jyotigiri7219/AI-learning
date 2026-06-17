@@ -147,7 +147,7 @@ Beginner → Intermediate → Advanced
       👨‍💻 Creator & Maintainer
     </td>
     <td align="center">
-      <img src="https://img.icons8.com/color/96/000000/add-user-male.png" width="80px;" alt=""/>
+      <img src="https://avatars.githubusercontent.com/u/225804267?v=4" width="80px;" alt=""/>
       <br />
       <sub><b>Ayush</b></sub>
       <br />
