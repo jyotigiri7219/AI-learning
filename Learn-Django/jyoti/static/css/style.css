@@ -1,0 +1,173 @@
+/* body{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    font-size: zem;
+} */
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    background: radial-gradient(circle, #fff0f3 0%, #ffccd5 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Subtle glowing layout decoration */
+.bg-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(255, 77, 109, 0.1) 1px, transparent 0);
+    background-size: 24px 24px;
+    z-index: 0;
+}
+
+.proposal-container {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+    z-index: 1;
+}
+
+/* Glassmorphism Card Style */
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 45px 35px;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 20px 40px rgba(255, 77, 109, 0.15);
+    text-align: center;
+    transition: all 0.4s ease;
+}
+
+/* Pulse Heart Effect */
+.heart-wrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px auto;
+}
+
+.heart-icon {
+    font-size: 4.5rem;
+    line-height: 80px;
+    position: relative;
+    z-index: 2;
+    animation: heartbeat 1.4s infinite cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.heart-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 77, 109, 0.2);
+    border-radius: 50%;
+    z-index: 1;
+    animation: ripple 1.4s infinite cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.title {
+    color: #ff4d6d;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.message {
+    color: #590d22;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Button Layout & Styling */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.yes-btn {
+    background: linear-gradient(135deg, #ff4d6d 0%, #ff758f 100%);
+    color: white;
+    box-shadow: 0 8px 20px rgba(255, 77, 109, 0.4);
+}
+
+.yes-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px rgba(255, 77, 109, 0.5);
+}
+
+/* Standard sleek styling for No button before teleporting */
+.no-btn {
+    background: #ffffff;
+    color: #ff4d6d;
+    border: 2px solid #ffccd5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Animations */
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    30% { transform: scale(1.12); }
+    60% { transform: scale(1); }
+}
+
+@keyframes ripple {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* Post-Yes Confetti Styles */
+.confetti {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: -10px;
+    border-radius: 50%;
+    animation: fall 3s linear infinite;
+    z-index: 10;
+}
+
+@keyframes fall {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(105vh) rotate(360deg); opacity: 0; }
+}
+
+.success-text {
+    animation: textPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes textPop {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}

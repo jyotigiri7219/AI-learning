@@ -3,8 +3,7 @@ from django.shortcuts import render
 
 
 def home(request):
-    
-    return render(request,'intex.html')
+    return render(request,'website/index.html')
  #HttpResponse("HELLO , WORLD. you are at shop home cycle")
 
 def about(request):
